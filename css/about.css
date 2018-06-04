@@ -1,0 +1,124 @@
+/* general rules*/
+
+h2 {
+	font-family: Oswald; font-size: 45px; color: #3c3c3c; 
+	margin: 20px 0; text-transform: uppercase; font-weight: bold; margin-left: 5%
+}
+/* end general rules*/
+
+
+/* start main view*/
+
+.about-show {
+	 max-height: 530px; overflow: hidden; 
+}
+.about-show img {
+	max-width: 100%
+}
+.about-show .container-fluid {
+	padding: 0
+}
+
+/* end main view*/
+
+
+/* start about text*/
+
+.main-about-us {
+	position: relative; background: ;  padding-bottom: 70px
+}
+
+.ab {
+	 background: #fff;position: absolute; top:0; left:0 ; transform: translate(0,-100%)
+}
+
+.main-about-us .ab h1 {
+    font-family: Oswald; font-size: 80px; color: #3c3c3c; 
+	margin-left:; text-transform: uppercase; font-weight: bold; padding: 30px
+}
+.main-about-us p {
+	color: #3c3c3c; font-size: 30px;margin-left: 4%;
+}
+@media(max-width:767px){
+	.main-about-us .ab {
+		 position: static; transform: translate(0,0)
+	}
+	.main-about-us p {
+		font-size: 20px
+	}
+}
+@media(min-width:768px) and (max-width:990px){
+	.main-about-us .ab {
+		  background: #fff;position: absolute; top:0; left:0 ; transform: translate(0,-100%);
+	}
+	.main-about-us .ab h1{
+		padding: 0px
+	}
+}
+
+@media(min-width:991px){
+	.ab {
+	 background: #fff;position: absolute; top:0; left:0 ; transform: translate(0,-100%);
+   }
+	.main-about-us .ab h1{
+		padding: 10px
+	}
+}
+@media(min-width:1200px){
+	.ab {
+	 background: #fff;position: absolute; top:0; left:0 ; transform: translate(0,-100%)
+   }
+   .main-about-us .ab h1{
+		padding: 30px
+	}	
+}
+
+/* end about text*/
+
+
+/* start about icons*/
+
+.about-us {
+	background: rgb(245,245,245);
+}
+.about-details {
+	margin: 30px 0
+}
+.about-details img {
+	max-width: 100%
+}
+.about-details p {
+	text-transform: capitalize; margin: 10px 0; 
+	font-family: Oswald; color: #5c5c5c; 
+	letter-spacing: 1px; font-size: 18px
+}
+
+/* end about icons*/
+
+
+/* start different better text*/
+
+.differnet h1 {
+	font-family: Oswald; font-size: 75px; color: #3c3c3c; 
+	margin: 50px 0; text-transform: uppercase; font-weight: bold;
+	letter-spacing: 2px
+}
+.different p {
+	text-transform: capitalize; margin: 10px 0; 
+	font-family: Oswald; color: #5c5c5c; 
+	letter-spacing: 1px; 
+}
+
+/* end different better text*/
+
+
+
+
+/* start our clients*/
+
+.clients h1 {
+	font-family: Oswald; font-size: 80px; color: #3c3c3c; text-align: ;
+	margin: 50px 0; text-transform: uppercase; font-weight: bold; 
+	letter-spacing: 2px
+}
+/* end our clients*/

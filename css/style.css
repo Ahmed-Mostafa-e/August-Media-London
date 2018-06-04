@@ -1,0 +1,526 @@
+
+/*navbar start*/
+
+.navbar-brand {
+	padding:0; min-height: 70px; max-width: 70px; margin-top: 55%
+}
+.navbar-brand img{
+	max-width:70px ; max-height: 100%; 
+}
+@media(max-width:767px){
+	.navbar-brand{
+		margin: 1% 0 0 3%; min-height: 50px
+	}
+}
+@media(min-width:768px){
+	.nav.navbar-nav > li > a, .nav.navbar-nav > li > a > i {
+		 line-height: 120px
+	}
+}
+.nav.navbar-nav > li > a {
+	color: #3c3c3c; font-family: Titillium Web;
+	font-variant-caps:small-caps;
+	font-size: 23px; letter-spacing: 1px;background: #fff; 
+	padding: 0 20px; -webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.nav.navbar-nav > li > a::before {
+	content: ''; display: block;margin:  auto;
+	width:0; height: 5px; background: #3c3c3c; 
+    -webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.nav.navbar-nav > li > a:hover::before {
+	width: auto; -webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.nav li:nth-child(5), .nav li:nth-child(6), .nav li:nth-child(7){
+	margin:0 -10px!important; font-size: 0px
+}
+
+/*start mini nav */
+ .in ul li a {
+	line-height: 50px
+}
+.in ul li a i {
+	padding: 10px 20px
+}
+.navbar-toggle {
+	background-color: transparent; border:none;
+	margin-top: 5px; border-radius: 4px;
+	-webkit-transition: .4s ease;
+	-moz-transition: .4s ease;
+	-o-transition: .4s ease;
+	transition: .4s ease;
+}
+.icon-bar {
+	background: #333; margin: 5px ; padding: 1.5px 18px; 
+}
+
+/*end mini nav */
+
+
+
+
+/*navbar end*/
+
+
+/* start show*/
+.show {
+	 max-height: 550px; overflow: hidden
+}
+.show .container-fluid {
+	padding: 0
+}
+
+.show video {
+	min-width:100% ; 
+}
+.video-text {
+	position: absolute; top: 43%; color: #fff; font-weight: bold;
+	font-family: Oswald; font-size: 80px; text-transform: capitalize; 
+    width: 100%; 
+}
+.video-text p {
+	letter-spacing: 5px; line-height: 80px; 
+}
+/* end show */
+
+
+/*start about*/
+.about {
+}
+.about p {
+	font-family: Oswald; font-size: 41px; color: #3c3c3c; 
+	padding-top: 70px ; line-height: 60px;font-weight:
+}
+.about .lead {
+	color: #737373; padding-top: 30px; 
+}
+.about .lead strong {
+	color: tomato; text-transform: capitalize
+}
+/*end about*/
+
+/*start our work*/
+.our-work {
+	background-color: rgb(250,250,250); 
+}
+.our-work .lead {
+	color: #444; font-family: Oswald; font-weight: normal;
+	letter-spacing: 1px; text-align: left;
+} 
+
+.our-work h1 {
+	font-family: Oswald; color: #444; font-variant: small-caps;
+	font-size: 110px; text-align:left ; font-weight: bolder;padding: 50px 0
+}
+
+.work {
+	position: relative; overflow: hidden; 
+}
+.work .logo-container {
+	position: absolute; top: 50%;left: 50%; 
+	transform: translate(-50%,-50%);
+} 
+.work > img {
+	width: 100%; min-height: 100%; 
+	filter: brightness(50%);
+    -webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.work .logo-container .second-work-img {
+	filter: brightness(100%); max-width: 280px;
+	padding-bottom: 20px;
+	transition: .2s ease;
+	-webkit-transition:.2s ease;	
+	-moz-transition:.2s ease;
+	-o-transition:.2s ease;
+
+
+}
+.work-p {
+	 color: #fff; font-family: Titillium Web;
+	font-variant: small-caps;font-size: 20px;
+	letter-spacing: 1px; transition: .2s ease;
+	-webkit-transition:.2s ease;	
+	-moz-transition:.2s ease;
+	-o-transition:.2s ease;
+}
+.work-link {
+	position: absolute; top: 70%;left: 50%; transform: translate(-50%,-50%);
+}
+
+
+.work-link a {
+	text-decoration: none; color: #333;
+	font-family: tahoma!important; font-variant:small-caps;
+	font-size: 25px; position:relative; bottom: 130px;
+    background-color: rgb(255, 255, 255, .8); 
+	visibility: hidden; opacity: 0; padding: 13px 40px; 
+	display: block
+}
+.work-link a:before {
+	content:attr(data-text); position: absolute; left: 0; top: 0;
+	width: 0; padding: 13px 40px;
+	white-space: nowrap; display: inline-block; 
+}
+.our-work .work a:hover {
+	color: #fff; 
+}
+@media(max-width:500px){
+	.work-link a:before {
+		display: none
+	}
+	.work-link a {
+		padding: 10px; font-size: 20px; background-color: #fff;
+	}
+	.our-work .work a:hover{
+		color: #737373
+	}
+	.work-link  {
+		top: 80%;
+	}
+}
+.work-link a:hover:before {
+	width: 100%; background: #111; 
+	-webkit-transition: all .5s ease; 
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.our-work .col-lg-6, .our-work .col-md-6, .our-work .col-sm-12 {
+	 padding:0 ; 
+}
+.work:hover .second-work-img {
+	transform: translateX(200%);
+    -webkit-transition: all .6s ease; 
+	-moz-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+}
+.work:hover .work-p   {
+	transform: translateX(-200%);
+	-webkit-transition: all .6s ease; 
+	-moz-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+}
+.work:hover img {
+	filter: brightness(90%); -webkit-transition: .7s ease, transform 10s ease; 
+	-moz-transition:  .7s ease, transform 10s ease;
+	-o-transition:  .7s ease, transform 10s ease;
+	transition:  .7s ease, transform 10s ease;
+	transform: scale(1.1,1.1);
+}
+.work:hover a {
+	visibility: visible;opacity: 1; 
+	-webkit-transition: opacity .8s ease-in; 
+    -o-transition: opacity .8s ease-in; 
+	-moz-transition: opacity .8s ease-in; 
+    transition: opacity .8s ease-in; 
+}
+
+
+/*end our work*/
+
+/*start our news*/
+.our-news {
+	position: ; margin: 40px 0
+}
+.our-news h1 {
+	font-family: Oswald; color: #444; font-variant: small-caps;
+	font-size: 110px; text-align: left; font-weight: bold; letter-spacing: -1px;
+	padding: 50px 0; 
+}
+.our-news .col-lg-4, .our-news .col-md-4, .our-news .col-sm-4, .our-news .col-xs-12  {
+	padding: 5px; margin:0 auto 
+}
+
+.news {
+	position:relative;  
+}
+.news img {
+	max-width: 100%; height: ; filter: brightness(60%);
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: .4s ease
+}
+.news:hover img{
+	filter: brightness(100%); 
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: .4s ease
+}
+.news:hover .news-text {
+	background: rgba(1,1,1,.4); 	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+.news-text {
+	position: absolute; top:30% ; left: 10%;
+	 color: #fff; 
+	width: 80%;padding: 18px 5px; 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+
+@media(min-width:1200px){
+	.news .news-text{
+		 position: absolute; top: 55%;
+	}
+}
+.news-text p {
+	text-transform: capitalize
+}
+.news-text h5 {
+	font-weight: bold; font-size: 16px
+}
+.our-news .news .news-text a {
+	text-decoration: none; color: #fff; display:inline-block;
+	font-family: Titillium Web; font-variant: small-caps;
+	margin-top: 5px; letter-spacing: 2px;
+	font-size: 18px; background: #333;
+	padding: 8px 30px ; font-weight: bolder; 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+.our-news .news .news-text a:hover {
+	background-color:#444; 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+/*end our news*/
+
+
+/*start team section*/
+
+.team-title h1 {
+	color:#3c3c3c ; margin-top: 60px ; font-variant: small-caps;
+	font-family:Oswald; letter-spacing: 1px;
+	font-size: 110px
+}
+.team-title p {
+	font-family: karla; color: #737373; font-size: 16px;
+	padding-bottom: 30px
+}
+.team {
+	min-height: 600px;
+}
+.people {
+	position: relative; overflow: hidden
+}
+.people img {
+	width: 100%; 
+}
+@media(min-width:1200px) {
+	.col-lg-5{
+		width: 20%; 
+	}
+}
+@media(min-width:991px) {
+	.col-md-5{
+		width: 20%; 
+	}
+}
+@media(min-width:787px) {
+	.col-sm-5{
+		width: 20%; 
+	}
+}
+
+.team .col-lg-5, .team .col-md-3, .team .col-sm-6, .team .col-xs-12 {
+	 padding: 0; 
+}
+.people .tex {
+	position: absolute; bottom: 0; 
+	background-color: rgba(255,255,255,.7);
+	width: 100%; height: 0
+}
+.people .tex h2 {
+	font-variant: small-caps; color: #111; font-family:  Ubuntu;
+}
+.people .tex p {
+	font-family: karla; color: #555; font-size: 20px; font-variant-caps: petite-caps
+}
+.people:hover .tex {
+	height: 37%; 
+	-webkit-transition: .3s ease-in-out; 
+	-moz-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out; 
+	transition: .3s ease-in-out; 
+}
+
+
+
+/*end team section*/
+
+
+/*start contact*/
+.contact {
+	padding:20px 0;
+}
+.contact h3 {
+	padding-top: 10px; padding-bottom: 10px;
+	color: #3c3c3c; font-variant: small-caps;
+	letter-spacing: 1px; 
+}
+.contact .lead {
+	color: #555; font-family: ;
+	letter-spacing: 1px; line-height: 1.5em;
+	font-size: 16px; 
+}
+
+/*end contact*/
+
+/*start scrolltop*/
+.scroll {
+	padding-top: 40px; padding-bottom: 10px 
+}
+.scrolltop i {
+	color: #4c4c4c; font-size: 90px; cursor: pointer;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+.scrolltop i:hover {
+	color: #1c1c1c;
+	transform: translateY(-15px);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: .3s ease
+}
+/*end scrolltop*/
+
+/*start footer*/
+footer {
+	background-color: #1c1c1c; color: #fff; padding: 60px 0 
+}
+
+           /********** start left footer ************/
+
+footer .left-foot h3 {
+	font-variant: small-caps; font-family: Oswald; font-weight: bold; letter-spacing: 2px;
+}
+footer .left-foot p {
+	font-family: century gothic; 
+}
+footer .left-foot p a {
+	color: #fff
+}
+footer .left-foot .social-foot a  {
+	color: #737373; font-size: 18px; padding:5px 7px;
+	line-height: 80px;
+	cursor: pointer; border-right: 1px solid
+}
+footer .left-foot a:first-child {
+	border-left: 1px solid; padding-left: 12px
+}
+
+footer .left-foot a i:hover {
+	color: #fff
+}
+           /********** end left footer ************/
+
+
+           /********** start right footer ************/
+.right-foot img {
+	max-width: 200px;
+}
+.right-foot div {
+	 border-bottom: 1px solid #737373; padding: 10px 0;  
+}
+.right-foot ul {
+	list-style: none;
+}
+
+.right-foot ul li {
+	display: inline-block;  padding: 15px 15px 10px ; 
+	font-family: century gothic;color:  #fff
+}
+.right-foot ul li a {
+	color: #fff
+}
+.right-foot ul li i {
+	color: #797979; font-style: normal
+}
+            /********** end right footer ************/
+      
+/*end footer*/
+
+/****** start custom  *******/
+.work-page-h1 {
+	padding:0!important
+}
+.custom-h {
+	padding-top: 10px; padding-bottom: 10px; padding-left: 10px;
+	color: #3c3c3c; font-variant: small-caps; 
+	letter-spacing: 1px; font-size: 40px; font-weight: bold 
+}
+.custom-lead {
+	padding: 30px 0
+}
+.custom-vid-div {
+	position: absolute;top: 37%;
+	color: #fff; font-weight: bold;
+	font-family: Oswald; font-size: 60px; text-transform: capitalize; 
+    width: 100%; letter-spacing: 4px; 
+}
+/****** end custom  *******/
+
+/**********************************************our work page*********************************************/
+
+/*start clients*/
+
+.clients {
+	position: relative; padding-top: 40px; padding-bottom: 40px
+}
+.clients .row {
+	background:rgb(250,250,250)
+}
+.client img {
+	width: 100%; max-height: 100%
+} 
+/****************************** news page *********************************************/
+.show-more {
+ padding: 30px 0
+}
+.show-more a{
+	background-color:  #8ab92d; padding: 10px 30px; 
+	font-family: Oswald; color: #fff; font-size: 30px;
+	border: 1px solid transparent;font-variant: small-caps;
+	text-decoration: none; letter-spacing: 2px;
+	-webkit-transition:.4s ease;
+	-o-transition:.4s ease;
+	-moz-transition:.4s ease;
+	transition:.4s ease;
+}
+.show-more a:hover {
+	background-color: #9acd32;
+	-webkit-transition:.4s ease;
+	-o-transition:.4s ease;
+	-moz-transition:.4s ease;
+	transition:.4s ease;
+}
+
+

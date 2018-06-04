@@ -352,22 +352,26 @@
 }
 .people .tex {
 	position: absolute; bottom: 0; 
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,1);
 	width: 100%; height: 0
 }
 .people .tex h2 {
-	font-variant: small-caps; color: #111; font-family:  Ubuntu;
+	font-variant: small-caps; color: #333;
+	font-family: titillium web; padding-top: ;
+	letter-spacing: 1px; font-weight:;
 }
 .people .tex p {
-	font-family: karla; color: #555; font-size: 20px; font-variant-caps: petite-caps
+	font-family: ; color:darkred; font-size: 18px; font-variant:small-caps;
+	letter-spacing: 1px;margin:10px 0
 }
 .people:hover .tex {
-	height: 37%; 
-	-webkit-transition: .3s ease-in-out; 
-	-moz-transition: .3s ease-in-out;
-	-o-transition: .3s ease-in-out; 
-	transition: .3s ease-in-out; 
+	 height: 35%; 
+	-webkit-transition: .3s ease-in; 
+	-moz-transition: .3s ease-in;
+	-o-transition: .3s ease-in; 
+	transition: .3s ease-in; 
 }
+
 
 
 
@@ -459,10 +463,17 @@ footer .left-foot a i:hover {
 	font-family: century gothic;color:  #fff
 }
 .right-foot ul li a {
-	color: #fff
+	color: #fff; padding: 0 ; margin: 0
 }
 .right-foot ul li i {
 	color: #797979; font-style: normal
+}
+@media(max-width:500px){
+	.right-foot ul li {
+	  padding: 10px 4px ;
+   }
+
+	
 }
             /********** end right footer ************/
       
